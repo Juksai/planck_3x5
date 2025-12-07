@@ -177,8 +177,6 @@
 &kp Z      &kp X     &kp C      &kp V        &kp B            &kp N            &kp M            &kp COMMA  &kp DOT   &kp FSLH
 &kp LCTRL  &kp LALT  &kp LSHFT  &lt 1 SPACE  &lt 1 SPACE      &lt 2 BACKSPACE  &lt 2 BACKSPACE  &kp TAB    &kp CLCK  &kp LGUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_1 {

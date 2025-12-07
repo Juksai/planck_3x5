@@ -145,12 +145,12 @@
             key-positions = <26 36>;
         };
 
-        K, {
+        Kk {
             bindings = <&kp LS(NUMBER_8)>;
             key-positions = <27 37>;
         };
 
-        L. {
+        Ll {
             bindings = <&kp LS(NUMBER_9)>;
             key-positions = <28 38>;
         };

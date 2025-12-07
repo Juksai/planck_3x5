@@ -3,6 +3,7 @@
 #include <behaviors/off_io.dtsi> // for off behavior
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // / {
 //     chosen {
@@ -11,6 +12,155 @@
 // };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        qa {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <0 10>;
+        };
+
+        ws {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <1 11>;
+        };
+
+        ed {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <2 12>;
+        };
+
+        rf {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <3 13>;
+        };
+
+        tg {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <4 14>;
+        };
+
+        yh {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <5 15>;
+        };
+
+        uj {
+            bindings = <&kp NUMBER_7>;
+            key-positions = <6 16>;
+        };
+
+        ik {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <7 17>;
+        };
+
+        ol {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <8 18>;
+        };
+
+        p {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <9 19>;
+        };
+
+        qw {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        rt {
+            bindings = <&kp TILDE>;
+            key-positions = <4 3>;
+        };
+
+        as {
+            bindings = <&kp UP>;
+            key-positions = <10 11>;
+        };
+
+        sd {
+            bindings = <&kp DOWN>;
+            key-positions = <11 12>;
+        };
+
+        df {
+            bindings = <&kp LEFT>;
+            key-positions = <12 13>;
+        };
+
+        fg {
+            bindings = <&kp RIGHT>;
+            key-positions = <13 14>;
+        };
+
+        IO {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <7 8>;
+        };
+
+        OP {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <8 9>;
+        };
+
+        JK {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
+        };
+
+        AZ {
+            bindings = <&kp LS(NUMBER_1)>;
+            key-positions = <20 30>;
+        };
+
+        SX {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <21 31>;
+        };
+
+        DC {
+            bindings = <&kp LS(NUMBER_3)>;
+            key-positions = <22 32>;
+        };
+
+        FV {
+            bindings = <&kp LS(NUMBER_4)>;
+            key-positions = <23 33>;
+        };
+
+        GB {
+            bindings = <&kp LS(NUMBER_5)>;
+            key-positions = <34 24>;
+        };
+
+        HN {
+            bindings = <&kp LS(NUMBER_6)>;
+            key-positions = <25 35>;
+        };
+
+        JM {
+            bindings = <&kp LS(NUMBER_7)>;
+            key-positions = <26 36>;
+        };
+
+        K, {
+            bindings = <&kp LS(NUMBER_8)>;
+            key-positions = <27 37>;
+        };
+
+        L. {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <28 38>;
+        };
+
+        P0 {
+            bindings = <&kp LS(NUMBER_0)>;
+            key-positions = <29 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,10 +172,10 @@
             //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
 
             bindings = <
-&kp Q      &kp W     &kp E    &kp R  &kp T          &kp Y          &kp U  &kp I      &kp O      &kp P
-&kp A      &kp S     &kp D    &kp F  &kp G          &kp H          &kp J  &kp K      &kp L      &kp SEMI
-&kp Z      &kp X     &kp C    &kp V  &kp B          &kp N          &kp M  &kp COMMA  &kp DOT    &kp FSLH
-&kp LSHFT  &kp LGUI  &kp DEL  &mo 1  &kp ENTER      &kp BACKSPACE  &mo 2  &kp RALT   &kp RCTRL  &kp LGUI
+&kp Q      &kp W     &kp E      &kp R        &kp T            &kp Y            &kp U            &kp I      &kp O     &kp P
+&kp A      &kp S     &kp D      &kp F        &kp G            &kp H            &kp J            &kp K      &kp L     &kp SEMICOLON
+&kp Z      &kp X     &kp C      &kp V        &kp B            &kp N            &kp M            &kp COMMA  &kp DOT   &kp FSLH
+&kp LCTRL  &kp LALT  &kp LSHFT  &lt 1 SPACE  &lt 1 SPACE      &lt 2 BACKSPACE  &lt 2 BACKSPACE  &kp TAB    &kp CLCK  &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -33,19 +183,19 @@
 
         layer_1 {
             bindings = <
-&trans  &kp N7  &kp N8  &kp N9  &bootloader      &trans     &trans  &trans  &trans  &trans
-&trans  &kp N4  &kp N5  &kp N6  &kp N0           &trans     &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp DOT          &kp SPACE  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans     &trans  &trans  &trans  &trans
+&trans     &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL
+&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp SINGLE_QUOTE
+&kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LSHFT           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD     &trans
+&trans     &trans          &trans          &trans           &trans              &trans        &trans        &kp NUMBER_0  &trans         &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &trans      &bootloader  &trans  &trans  &trans  &trans
-&trans  &kp F4  &kp F5  &kp F6  &trans      &trans       &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3  &trans      &trans       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans
+&kp TAB    &trans       &kp UP_ARROW    &trans           &trans      &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&kp CLCK   &kp LEFT     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&kp LSHFT  &trans       &trans          &trans           &trans      &kp F11  &kp F12  &kp F13  &kp F14  &trans
+&trans     &bootloader  &trans          &trans           &trans      &trans   &trans   &trans   &trans   &bootloader
             >;
         };
 

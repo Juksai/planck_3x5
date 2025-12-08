@@ -105,52 +105,52 @@
         };
 
         AZ {
-            bindings = <&kp LS(NUMBER_1)>;
+            bindings = <&kp LS(N1)>;
             key-positions = <20 30>;
         };
 
         SX {
-            bindings = <&kp LS(NUMBER_2)>;
+            bindings = <&kp LS(N2)>;
             key-positions = <21 31>;
         };
 
         DC {
-            bindings = <&kp LS(NUMBER_3)>;
+            bindings = <&kp LS(N3)>;
             key-positions = <22 32>;
         };
 
         FV {
-            bindings = <&kp LS(NUMBER_4)>;
+            bindings = <&kp LS(N4)>;
             key-positions = <23 33>;
         };
 
         GB {
-            bindings = <&kp LS(NUMBER_5)>;
+            bindings = <&kp LS(N5)>;
             key-positions = <34 24>;
         };
 
         HN {
-            bindings = <&kp LS(NUMBER_6)>;
+            bindings = <&kp LS(N6)>;
             key-positions = <25 35>;
         };
 
         JM {
-            bindings = <&kp LS(NUMBER_7)>;
+            bindings = <&kp LS(N7)>;
             key-positions = <26 36>;
         };
 
         Kk {
-            bindings = <&kp LS(NUMBER_8)>;
+            bindings = <&kp LS(N8)>;
             key-positions = <27 37>;
         };
 
         Ll {
-            bindings = <&kp LS(NUMBER_9)>;
+            bindings = <&kp LS(N9)>;
             key-positions = <28 38>;
         };
 
         P0 {
-            bindings = <&kp LS(NUMBER_0)>;
+            bindings = <&kp LS(N0)>;
             key-positions = <29 39>;
         };
 
@@ -171,19 +171,19 @@
             //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
 
             bindings = <
-&kp Q      &kp W     &kp E      &kp R        &kp T            &kp Y            &kp U            &kp I      &kp O     &kp P
-&kp A      &kp S     &kp D      &kp F        &kp G            &kp H            &kp J            &kp K      &kp L     &kp SEMICOLON
-&kp Z      &kp X     &kp C      &kp V        &kp B            &kp N            &kp M            &kp COMMA  &kp DOT   &kp FSLH
-&kp LCTRL  &kp LALT  &kp LSHFT  &lt 1 SPACE  &lt 1 SPACE      &lt 2 BACKSPACE  &lt 2 BACKSPACE  &kp TAB    &kp CLCK  &kp LGUI
+&kp Q      &kp W     &kp E      &kp R        &kp T            &kp Y          &kp U          &kp I      &kp O     &kp P
+&kp A      &kp S     &kp D      &kp F        &kp G            &kp H          &kp J          &kp K      &kp L     &kp SEMICOLON
+&kp Z      &kp X     &kp C      &kp V        &kp B            &kp N          &kp M          &kp COMMA  &kp DOT   &kp FSLH
+&kp LCTRL  &kp LALT  &kp LSHFT  &lt 1 SPACE  &lt 1 SPACE      &kp BACKSPACE  &kp BACKSPACE  &kp TAB    &kp CLCK  &kp LGUI
             >;
         };
 
         layer_1 {
             bindings = <
 &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL
-&trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp SINGLE_QUOTE
+&kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp SINGLE_QUOTE
 &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LSHFT      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD     &trans
-&trans     &trans          &bootloader     &trans           &trans         &kp ENTER     &kp ENTER     &kp NUMBER_0  &trans         &trans
+&trans     &trans          &kp LSHFT       &trans           &trans         &kp ENTER     &kp ENTER     &kp NUMBER_0  &trans         &trans
             >;
         };
 

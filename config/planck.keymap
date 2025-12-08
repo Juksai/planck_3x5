@@ -104,56 +104,6 @@
             key-positions = <16 17>;
         };
 
-        AZ {
-            bindings = <&kp LS(N1)>;
-            key-positions = <20 30>;
-        };
-
-        SX {
-            bindings = <&kp LS(N2)>;
-            key-positions = <21 31>;
-        };
-
-        DC {
-            bindings = <&kp LS(N3)>;
-            key-positions = <22 32>;
-        };
-
-        FV {
-            bindings = <&kp LS(N4)>;
-            key-positions = <23 33>;
-        };
-
-        GB {
-            bindings = <&kp LS(N5)>;
-            key-positions = <34 24>;
-        };
-
-        HN {
-            bindings = <&kp LS(N6)>;
-            key-positions = <25 35>;
-        };
-
-        JM {
-            bindings = <&kp LS(N7)>;
-            key-positions = <26 36>;
-        };
-
-        Kk {
-            bindings = <&kp LS(N8)>;
-            key-positions = <27 37>;
-        };
-
-        Ll {
-            bindings = <&kp LS(N9)>;
-            key-positions = <28 38>;
-        };
-
-        P0 {
-            bindings = <&kp LS(N0)>;
-            key-positions = <29 39>;
-        };
-
         caps {
             bindings = <&kp LS(CAPS)>;
             key-positions = <15 16>;
@@ -180,8 +130,8 @@
 
         layer_1 {
             bindings = <
-&kp TILDE  &trans          &kp UP_ARROW    &trans           &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL
-&kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp SINGLE_QUOTE
+&kp TILDE  &trans          &kp UP_ARROW    &trans           &kp TAB        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL
+&kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp SINGLE_QUOTE
 &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LSHFT      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD     &trans
 &trans     &trans          &kp LSHFT       &trans           &trans         &kp ENTER     &kp ENTER     &kp NUMBER_0  &trans         &trans
             >;

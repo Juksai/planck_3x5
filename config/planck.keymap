@@ -153,6 +153,11 @@
             bindings = <&kp LS(NUMBER_0)>;
             key-positions = <29 39>;
         };
+
+        caps {
+            bindings = <&kp LS(CAPS)>;
+            key-positions = <15 16>;
+        };
     };
 
     keymap {

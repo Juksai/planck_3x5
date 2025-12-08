@@ -2,6 +2,7 @@
 include:
   - board: planck_left
   - board: planck_right
+  - board: planck_right
     shield: settings_reset
 
 

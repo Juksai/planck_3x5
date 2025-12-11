@@ -104,11 +104,6 @@
             bindings = <&kp ENTER>;
             key-positions = <16 17>;
         };
-
-        caps {
-            bindings = <&kp LS(CAPS)>;
-            key-positions = <15 16>;
-        };
     };
 
     keymap {
@@ -134,7 +129,7 @@
 &kp TILDE   &trans          &kp UP_ARROW    &trans           &kp TAB        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL
 &kp LC(A)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp SINGLE_QUOTE
 &kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LSHFT      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD     &trans
-&bt BT_NXT  &bt BT_PRV      &kp LSHFT       &trans           &trans         &kp ENTER     &kp ENTER     &kp NUMBER_0  &trans         &trans
+&bt BT_CLR  &bootloader     &kp LSHFT       &trans           &trans         &kp ENTER     &kp ENTER     &kp NUMBER_0  &trans         &bootloader
             >;
         };
 
